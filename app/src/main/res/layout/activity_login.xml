@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blurbackground1"
+    android:id="@+id/relativeLayout3">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/genylogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="284dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:hint="Enter your email "
+        android:inputType="textEmailAddress"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="#ffffff"
+        android:paddingEnd="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLogin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="55dp"
+        app:passwordToggleDrawable="@drawable/password_icon_selector"
+        android:hint="Enter your password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:shadowColor="@color/common_google_signin_btn_text_dark_default"
+            android:textAlignment="viewStart"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLogin"
+            tools:textColor="@color/common_google_signin_btn_text_dark_default" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="#ffffff"
+        android:paddingEnd="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passtext" />
+
+<com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="104dp"
+        app:backgroundTint="#debf0cc6"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:padding="12dp"
+        app:cornerRadius="30dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUpButton"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:padding="12dp"
+        app:cornerRadius="30dp"
+        app:backgroundTint="#debf0cc6"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="@+id/loginButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="9dp"
+        android:text="New User ? Sign Up"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

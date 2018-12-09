@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quesbackground"
+    tools:context=".Question4"
+    android:id="@+id/relativeLayout7">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:drawableLeft="@drawable/ic_question_answer_black_24dp"
+        android:drawablePadding="7dp"
+        android:text="Question 4 of 5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="323dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/quesback"
+        android:paddingTop="9dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="5dp"
+        android:text="How well are your problems solved ?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="261dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/sliderback"
+        android:pointerIcon="hand"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="279dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:drawableBottom="@drawable/ic_sentiment_dissatisfied_black_24dp"
+        android:drawablePadding="5dp"
+        android:text="Not Solved"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-22dp"
+        android:layout_marginBottom="148dp"
+        android:drawableBottom="@drawable/ic_sentiment_very_satisfied_black_24dp"
+        android:drawablePadding="5dp"
+        android:text=" Solved"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="365dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextQues4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nextQues4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="51dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/arrow"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="443dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

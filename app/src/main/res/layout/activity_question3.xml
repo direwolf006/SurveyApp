@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quesbackground"
+    tools:context=".Question3">
+
+    <TextView
+        android:id="@+id/questionNo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="52dp"
+        android:drawableLeft="@drawable/ic_question_answer_black_24dp"
+        android:drawablePadding="7dp"
+        android:text="Question 3 of 5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="133dp"
+        android:background="@drawable/quesback"
+        android:drawableLeft="@drawable/ic_domain_black_24dp"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingRight="23dp"
+        android:paddingBottom="13dp"
+        android:text="which domain are you from ?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58">
+
+        <RadioButton
+            android:id="@+id/Domain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobtnback"
+            android:checked="true"
+            android:text="Andro-Army"
+            android:paddingRight="27dp"
+            android:drawableRight="@drawable/ic_android_black_24dp"
+            android:drawablePadding="45dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/Domain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobtnback"
+            android:text="AI-Pyths"
+            android:drawableRight="@drawable/ic_poll_black_24dp"
+            android:drawablePadding="94dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/Domain4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobtnback"
+            android:text="Cyber-Cells"
+            android:drawableRight="@drawable/ic_security_black_24dp"
+            android:paddingRight="25dp"
+            android:drawablePadding="54dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/Domain3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobtnback"
+            android:paddingRight="20dp"
+            android:text="Web-Scripters"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_desktop_mac_black_24dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nextQues3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="46dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/arrow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

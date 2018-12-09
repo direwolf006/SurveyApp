@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "575411754652",
+    "firebase_url": "https://gen-y-first-project-ce8c6.firebaseio.com",
+    "project_id": "gen-y-first-project-ce8c6",
+    "storage_bucket": "gen-y-first-project-ce8c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575411754652:android:16051bdc3e0ebf66",
+        "android_client_info": {
+          "package_name": "com.example.ritteshpv.surveyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575411754652-gsue6k4negn0m2efa08h7pjmnkti492q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDQQ7O-a_amCBxeZn5yQWgMBVm3j8upjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
